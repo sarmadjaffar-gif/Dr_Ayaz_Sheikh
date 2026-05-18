@@ -93,7 +93,7 @@ footer{background:#0a2236;color:rgba(255,255,255,.75);padding:var(--space-8) 0;f
 </style>
 </head>
 <body>
-<div class="topbar"><div class="topbar-inner"><span>💬 WhatsApp: <a href="https://wa.me/923328060674" target="_blank" rel="noopener noreferrer">0332-8060674</a></span><span>✉️ <a href="mailto:drayaz1970@gmail.com">drayaz1970@gmail.com</a></span></div></div>
+<div class="topbar"><div class="topbar-inner"><span>💬 WhatsApp: <a href="https://wa.me/923328060674" target="_blank" rel="noopener noreferrer">+92 332 8060674</a></span><span>✉️ <a href="mailto:drayaz1970@gmail.com">drayaz1970@gmail.com</a></span></div></div>
 <header class="site"><div class="container nav"><a href="#" class="brand"><div class="brand-mark">A</div><div class="brand-text"><strong>Dr. Ayaz H. Shaikh</strong><small>Diabetologist · Sexologist</small></div></a><button class="menu-btn" aria-label="Menu" onclick="document.getElementById('navlist').classList.toggle('open')"><span></span><span></span><span></span></button><ul id="navlist"><li><a href="#about">About</a></li><li><a href="#video">Video</a></li><li><a href="#expertise">Expertise</a></li><li><a href="#gallery">Gallery</a></li><li><a href="#clinics">Clinics</a></li><li><a href="#enquiry">Enquiry</a></li><li><a href="#contact">Contact</a></li></ul></div></header>
 
 <section class="hero"><div class="container hero-grid"><div><span class="eyebrow">Consultant Physician · Karachi</span><h1>Compassionate Care in <span>Diabetes</span> & Sexual Health</h1><p class="lead">Dr. Ayaz H. Shaikh is a dedicated diabetologist and sexologist with expertise in modern diabetes management, shock wave therapy, laser treatments, and minimally invasive procedures.</p><div class="cta-row"><a href="#contact" class="btn btn-primary">Book Appointment →</a><a href="#expertise" class="btn btn-ghost">View Expertise</a></div></div><div class="hero-portrait"><img src="./assets/dr-ayaz.jpg" alt="Portrait of Dr. Ayaz H. Shaikh" width="380" height="475" loading="eager"></div></div></section>
@@ -114,30 +114,30 @@ footer{background:#0a2236;color:rgba(255,255,255,.75);padding:var(--space-8) 0;f
 
 <section id="contact" class="contact"><div class="container"><div class="section-head"><span class="eyebrow">Get in Touch</span><h2>Book Your Consultation</h2><p style="color:rgba(255,255,255,.8)">Reach out via WhatsApp or email.</p></div><div class="contact-grid"><div class="contact-card"><div class="ic">💬</div><small>WhatsApp</small><a href="https://wa.me/923328060674" target="_blank" rel="noopener noreferrer">+92 332 8060674</a></div><div class="contact-card"><div class="ic">✉️</div><small>Email</small><a href="mailto:drayaz1970@gmail.com">drayaz1970@gmail.com</a></div><div class="contact-card"><div class="ic">📍</div><small>Based In</small><p>Karachi, Pakistan</p></div></div></div></section>
 
-<section class="tagline"><div class="container"><p>“The Vision You Can Imagine.”</p></div></section>
+<section class="tagline"><div class="container"><p>"The Vision You Can Imagine."</p></div></section>
 
 <footer><div class="container">© 2026 Dr. Ayaz H. Shaikh. All rights reserved. · Diabetologist & Sexologist · Karachi</div></footer>
 
 <script>
 function sendToWhatsApp(e){
   e.preventDefault();
-  const form = document.getElementById('enquiryForm');
-  const fd = new FormData(form);
-  const name = (fd.get('Name')||'').trim();
-  const email = (fd.get('Email')||'').trim();
-  const phone = (fd.get('Phone')||'').trim();
-  const subject = (fd.get('Subject')||'').trim();
-  const msg = (fd.get('Message')||'').trim();
-  let lines = ['Hello Dr. Ayaz,',''];
-  if(name) lines.push('Name: ' + name);
-  if(email) lines.push('Email: ' + email);
-  if(phone) lines.push('Phone: ' + phone);
-  if(subject) lines.push('Subject: ' + subject);
+  const form=document.getElementById('enquiryForm');
+  const fd=new FormData(form);
+  const name=(fd.get('Name')||'').trim();
+  const email=(fd.get('Email')||'').trim();
+  const phone=(fd.get('Phone')||'').trim();
+  const subject=(fd.get('Subject')||'').trim();
+  const msg=(fd.get('Message')||'').trim();
+  let lines=['Hello Dr. Ayaz,',''];
+  if(name) lines.push('Name: '+name);
+  if(email) lines.push('Email: '+email);
+  if(phone) lines.push('Phone: '+phone);
+  if(subject) lines.push('Subject: '+subject);
   lines.push('');
   lines.push('Message:');
-  lines.push(msg || '(no message provided)');
-  const text = encodeURIComponent(lines.join('\n'));
-  window.open('https://wa.me/923328060674?text=' + text, '_blank', 'noopener');
+  lines.push(msg||'(no message provided)');
+  const text=encodeURIComponent(lines.join('\n'));
+  window.open('https://wa.me/923328060674?text='+text,'_blank','noopener');
   return false;
 }
 (function(){
